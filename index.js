@@ -212,12 +212,12 @@ Swarm.prototype.removePeer = function (id) {
 
   if (id.indexOf('http') === 0) {
     if (self.parsedTorrent) {
-      setTimeout(function() {
+      setTimeout(function () {
         if (self.numConns < 3) {
           debug('no enough connection, add back webseed')
-          self.addWebSeed(id,self.parsedTorrent)
+          self.addWebSeed(id, self.parsedTorrent)
         }
-      },2000)
+      }, 2000)
     }
   }
   self._peers[id] = null
