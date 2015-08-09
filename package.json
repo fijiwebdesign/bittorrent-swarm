@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "addr-to-ip-port": "^1.0.1",
-    "async": "^0.9.0",
     "bitfield": "^1.1.1",
+    "run-parallel-limit": "^1.0.1",
     "bittorrent-protocol": "^1.2.0",
     "debug": "^2.0.0",
     "dezalgo": "^1.0.1",
